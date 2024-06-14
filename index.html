@@ -23,39 +23,64 @@
             font-style: italic;
             text-decoration: underline;
         }
+
+        .element {
+            line-height: 30px;
+
+        }
+
+        .cor {
+            color: white;
+        }
+
+        a, .links {
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+        }
+
+        .nav {
+            text-decoration: none;
+            color: black;
+        }
+
+        .nav:hover {
+            color: white;
+            transition: .3s;
+        }
     </style>
 </head>
 <body id="topo">
     <header>
         <h1 id="nome">Kenedy Kenechi Silva Madueke</h1>
         <nav>
-            <a href="#nome">Nome</a>
-            <a href="#sobre-mim">Sobre mim</a>
-            <a href="#blog-favorito">Blog Favorito</a>
+            <a href="#nome" class="nav">Nome</a>
+            <a href="#sobre-mim" class="nav">Sobre mim</a>
+            <a href="#blog-favorito" class="nav">Blog Favorito</a>
         </nav>
     </header>
     
     <main id="sobre-mim">
         <img src="./minha-foto.jpg" alt="Foto de Kenedy" width="300px" id="minha-foto">
 
-    <p class="descricao">Gosto do mundo da tecnologia em geral, mas principalmente de computadores. E poder criar um funcionalidade para ele é muito legal. <strong>Sou Brasileiro</strong>, nascido em <strong>São Paulo/SP</strong> e acredito que o brasileiro está abrindo o olhos para essa área de tecnologia.</p>
+    <p class="descricao">Gosto do mundo da tecnologia em geral, mas principalmente de computadores. E poder criar um funcionalidade para ele é muito legal. <strong>Sou Brasileiro</strong>, nascido em <strong><a href="https://pt.wikipedia.org/wiki/S%C3%A3o_Paulo" target="_blank">São Paulo/SP</a></strong> e acredito que o brasileiro está abrindo o olhos para essa área de tecnologia.</p>
 
     <ul>
-        <li>Bash</li>
-        <li>Git</li>
-        <li>GitHub</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Internet</li>
-        <li>Redes</li>
+        <li class="element">Bash</li>
+        <li class="element cor">Git</li>
+        <li class="element">GitHub</li>
+        <li class="element cor">HTML</li>
+        <li class="element">CSS</li>
+        <li class="element cor">Internet</li>
+        <li class="element">Redes</li>
     </ul>
     </main>
     
 
-    <p>Minha <a href="#minha-foto">Foto</a></p>
+    <p>Minha <a href="#minha-foto" class="links">Foto</a></p>
 
-    <p id="blog-favorito">Meu <a href="https://www.universal.org/" target="_blank">Blog Favorito</a></p>
+    <p id="blog-favorito">Meu <a href="https://www.universal.org/" target="_blank" class="links">Blog Favorito</a></p>
 
-    <p><a href="#topo">Subir ao topo</a></p>
+    <p><a href="#topo" class="links">Subir ao topo</a></p>
 </body>
 </html>
